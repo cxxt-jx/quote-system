@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>产品报价表</h1>
-        <div class="form-group">
-            <label for="product-input">产品名称：</label>
-            <input type="text" id="product-input" placeholder="请输入产品名称">
+    <header class="header">
+        <div class="header-content">
+            <h1>产品报价表</h1>
+            <p class="header-description">快速查询产品价格，支持模糊搜索</p>
         </div>
-        <div id="result" class="result"></div>
-        <div class="product-list">
-            <h2>可用产品列表</h2>
+    </header>
+    
+    <main class="container">
+        <section class="search-section">
+            <div class="form-group">
+                <label for="product-input">产品名称</label>
+                <input type="text" id="product-input" placeholder="请输入产品名称，例如：中华、好日子">
+            </div>
+            <div id="result" class="result"></div>
+        </section>
+        
+        <section class="product-list-section">
+            <div class="section-header">
+                <h2>可用产品列表</h2>
+                <p class="section-description">点击产品名称查看详细价格</p>
+            </div>
             <ul id="product-list"></ul>
-        </div>
-    </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2026 产品报价表 | 基于 GitHub Pages 部署</p>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
